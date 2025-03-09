@@ -66,5 +66,5 @@ while True:
             print("\nObrigado por usar o Banco Terminal!")
             break
         case _:
-            print("\nOpção inválida. Tente novamente.")
+            print("\nOpção inválida. Tente novamente..") 
  
