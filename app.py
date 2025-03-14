@@ -35,18 +35,21 @@ while True:
                     print("\n1 - Depositar")
                     print("2 - Sacar")
                     print("3 - Ver Saldo")
-                    print("4 - Listar Transacoes")
+                    print("4 - Extrato")
                     print("5 - Voltar ao Menu Principal")
                     escolha = input("Escolha uma opção: \n")
 
                     match escolha:
                         case "1":
                             valor = float(input("\nDigite o valor para depósito: "))
-                            conta.depositar(valor)
+                            if conta.limite_transacoes("Deposito"):
+                                conta.depositar(valor)
                         case "2":
                             valor = float(input("\nDigite o valor para saque: "))
-                            senha = input("Digite sua senha: ")
-                            conta.sacar(valor, senha) 
+                            if conta.limite_transacoes("Deposito"):
+                                conta.depositar(valor)
+                                senha = input("Digite sua senha: ")
+                                conta.sacar(valor, senha) 
                         case "3": 
                             senha = input("\nDigite sua senha: ")
                             conta._mostrar_saldo(senha)     

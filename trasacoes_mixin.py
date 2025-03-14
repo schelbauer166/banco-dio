@@ -15,6 +15,7 @@ class TransacoesMixin:
         else:
             print("\nPara saque - digite 1")
             print("Para deposito - digite 2")
+            print("Para todas - digite 3")
             escolha = input("\nqual tipo de transação?\n")
             
             match escolha:
@@ -27,6 +28,10 @@ class TransacoesMixin:
                     print("Transacoes de Deposito: \n")
                     deposito = [t for t in self.transacoes if "Deposito" in t]
                     for transacoes in deposito:
+                        print(transacoes)
+                case "3":
+                    print("Transacoes totais: \n")
+                    for transacoes in self.transacoes:
                         print(transacoes)
                 case _:
                     print("Opção inválida. Tente novamente.")       

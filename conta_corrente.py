@@ -1,6 +1,8 @@
 from log import GerarLog
 from trasacoes_mixin import TransacoesMixin
 from conta_iterador import ContaIterador
+from datetime import datetime
+
 
 
 class Conta_corrente(TransacoesMixin):
@@ -52,4 +54,14 @@ class Conta_corrente(TransacoesMixin):
         else:
             print("\nSaldo insuficiente ou valor inválido.")
 
-           
+
+    def transacoes_hoje(self):
+        hoje = datetime.now().date()
+        trasacoes_hoje = [t for t in self.transacoes if str(hoje) in t]
+        return len(trasacoes_hoje)
+        
+    def limite_transacoes(self, tipo, limite = 3):
+        if self.transacoes_hoje() >= limite:
+            print("Você excedeu o limite diário de 10 transações.")
+            return False
+        return True
