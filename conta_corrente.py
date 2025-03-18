@@ -54,7 +54,7 @@ class Conta_corrente(TransacoesMixin):
         else:
             print("\nSaldo insuficiente ou valor inválido.")
 
-
+    @GerarLog()
     def transacoes_hoje(self):
         hoje = datetime.now().date()
         trasacoes_hoje = [t for t in self.transacoes if str(hoje) in t]

@@ -1,0 +1,12 @@
+[LOG] 2025-03-17 22:07:22 - Executando criar_conta - Argumentos: (<class 'conta_corrente.Conta_corrente'>,), {} - Retorno: <conta_corrente.Conta_corrente object at 0x7ff7c6d76d20>
+[LOG] 2025-03-17 22:07:40 - Executando depositar - Argumentos: (<conta_corrente.Conta_corrente object at 0x7ff7c6d76d20>, 1000.0), {} - Retorno: None
+[LOG] 2025-03-17 22:07:45 - Executando depositar - Argumentos: (<conta_corrente.Conta_corrente object at 0x7ff7c6d76d20>, 2000.0), {} - Retorno: None
+[LOG] 2025-03-17 22:07:49 - Executando depositar - Argumentos: (<conta_corrente.Conta_corrente object at 0x7ff7c6d76d20>, 500.0), {} - Retorno: None
+[LOG] 2025-03-17 22:07:53 - Executando sacar - Argumentos: (<conta_corrente.Conta_corrente object at 0x7ff7c6d76d20>, 500.0, '3'), {} - Retorno: None
+[LOG] 2025-03-17 22:08:06 - Executando _mostrar_saldo - Argumentos: (<conta_corrente.Conta_corrente object at 0x7ff7c6d76d20>, '123'), {} - Retorno: None
+[LOG] 2025-03-17 22:09:44 - Executando criar_conta - Argumentos: (<class 'conta_corrente.Conta_corrente'>,), {} - Retorno: <conta_corrente.Conta_corrente object at 0x7f669c4fe8a0>
+[LOG] 2025-03-17 22:09:59 - Executando transacoes_hoje - Argumentos: (<conta_corrente.Conta_corrente object at 0x7f669c4fe8a0>,), {} - Retorno: 0
+[LOG] 2025-03-17 22:09:59 - Executando depositar - Argumentos: (<conta_corrente.Conta_corrente object at 0x7f669c4fe8a0>, 100.0), {} - Retorno: None
+[LOG] 2025-03-17 22:10:02 - Executando transacoes_hoje - Argumentos: (<conta_corrente.Conta_corrente object at 0x7f669c4fe8a0>,), {} - Retorno: 1
+[LOG] 2025-03-17 22:10:02 - Executando depositar - Argumentos: (<conta_corrente.Conta_corrente object at 0x7f669c4fe8a0>, 50.0), {} - Retorno: None
+[LOG] 2025-03-17 22:10:04 - Executando sacar - Argumentos: (<conta_corrente.Conta_corrente object at 0x7f669c4fe8a0>, 50.0, '1'), {} - Retorno: None
